@@ -23,12 +23,12 @@
                 <div class="settings-left">
                     <div class="setting">
                         <input type="hidden" id=""/>
-                        <div class="setting-header">Heap <span id="utilization-heap"></span></div>
+                        <div class="setting-header">堆 <span id="utilization-heap"></span></div>
                         <div class="setting-field">
                             <table id="heap-table">
                                 <tbody>
                                 <tr>
-                                    <td class="memory-header setting-name">Max:</td>
+                                    <td class="memory-header setting-name">最大值：</td>
                                 </tr>
                                 <tr>
                                     <td><span id="max-heap"></span></td>
@@ -37,7 +37,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Total:</td>
+                                    <td class="setting-name">总计：</td>
                                 </tr>
                                 <tr>
                                     <td><span id="total-heap"></span></td>
@@ -46,7 +46,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Used:</td>
+                                    <td class="setting-name">使用：</td>
                                 </tr>
                                 <tr>
                                     <td><span id="used-heap"></span></td>
@@ -55,7 +55,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Free:</td>
+                                    <td class="setting-name">空闲：</td>
                                 </tr>
                                 <tr>
                                     <td><span id="free-heap"></span></td>
@@ -72,12 +72,12 @@
                 <div class="spacer"></div>
                 <div class="settings-right">
                     <div class="setting">
-                        <div class="setting-header">Non-heap <span id="utilization-non-heap"></span></div>
+                        <div class="setting-header">非堆 <span id="utilization-non-heap"></span></div>
                         <div class="setting-field">
                             <table id="non-heap-table">
                                 <tbody>
                                 <tr>
-                                    <td class="memory-header setting-name">Max:</td>
+                                    <td class="memory-header setting-name">最大值：</td>
                                 </tr>
                                 <tr>
                                     <td><span id="max-non-heap"></span></td>
@@ -86,7 +86,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Total:</td>
+                                    <td class="setting-name">总计：</td>
                                 </tr>
                                 <tr>
                                     <td><span id="total-non-heap"></span></td>
@@ -95,7 +95,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Used:</td>
+                                    <td class="setting-name">使用：</td>
                                 </tr>
                                 <tr>
                                     <td><span id="used-non-heap"></span></td>
@@ -104,7 +104,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class="setting-name">Free:</td>
+                                    <td class="setting-name">空闲：</td>
                                 </tr>
                                 <tr>
                                     <td><span id="free-non-heap"></span></td>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="clear"></div>
                 <div class="setting">
-                    <div class="setting-header">Garbage Collection</div>
+                    <div class="setting-header">垃圾收集</div>
                     <div id="garbage-collection-container" class="setting-field">
                         <table id="garbage-collection-table">
                             <tbody></tbody>

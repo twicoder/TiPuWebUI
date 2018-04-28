@@ -28,14 +28,14 @@
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Within group</div>
+                        <div class="setting-name">组内</div>
                         <div class="setting-field">
                             <div id="read-only-connection-source-group-name"></div>
                         </div>
                     </div>
                     <div id="read-only-relationship-names-container" class="setting">
                         <div class="setting-name">
-                            Relationships
+                            关系
                             <div class="fa fa-question-circle" alt="Info" title="Selected relationships are in bold."></div>
                         </div>
                         <div class="setting-field">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Within group</div>
+                        <div class="setting-name">组内</div>
                         <div class="setting-field">
                             <div id="read-only-connection-target-group-name"></div>
                         </div>
@@ -62,13 +62,13 @@
             <div id="read-only-connection-settings-tab-content" class="configuration-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Name</div>
+                        <div class="setting-name">名称</div>
                         <div class="setting-field">
                             <span id="read-only-connection-name"></span>
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Id</div>
+                        <div class="setting-name">编号</div>
                         <div class="setting-field">
                             <span id="read-only-connection-id"></span>
                         </div>

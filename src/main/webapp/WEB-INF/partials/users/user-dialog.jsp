@@ -17,8 +17,8 @@
     <div class="dialog-content">
         <div class="setting">
             <div class="setting-field">
-                <input id="individual-radio-button" type="radio" name="userOrGroup" value="individual" checked="checked"/> Individual
-                <input id="group-radio-button" type="radio" name="userOrGroup" value="group" style="margin-left: 20px;"/> Group
+                <input id="individual-radio-button" type="radio" name="userOrGroup" value="individual" checked="checked"/> 个体
+                <input id="group-radio-button" type="radio" name="userOrGroup" value="group" style="margin-left: 20px;"/> 组
             </div>
             <div class="clear"></div>
         </div>

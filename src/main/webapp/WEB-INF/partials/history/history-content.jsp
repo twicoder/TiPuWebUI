@@ -16,15 +16,15 @@
 --%>
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <div id="history">
-    <div id="history-header-text">NiFi History</div>
+    <div id="history-header-text">TiPu历史</div>
     <div id="history-filter-container">
         <div id="cluster-history-message" class="hidden">
             Viewing history for the current node only. Browse to another node to view its history.
         </div>
         <div style="float: right">
             <div id="history-filter-overview">
-                A filter has been applied.&nbsp;
-                <span id="clear-history-filter" class="link">Clear filter</span>
+                过滤器被应用.&nbsp;
+                <span id="clear-history-filter" class="link">清空过滤器</span>
             </div>
             <button id="history-filter-button" title="Filter History" class="fa fa-filter"></button>
             <button id="history-purge-button" title="Purge History" class="fa fa-eraser hidden"></button>
@@ -34,9 +34,9 @@
     <div id="history-table"></div>
 </div>
 <div id="history-refresh-container">
-    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
     <div id="history-last-refreshed-container" class="last-refreshed-container">
-        Last updated:&nbsp;<span id="history-last-refreshed" class="value-color"></span>
+        最近一次更新：&nbsp;<span id="history-last-refreshed" class="value-color"></span>
     </div>
     <div id="history-loading-container" class="loading-container"></div>
 </div>

@@ -22,33 +22,33 @@
             <div id="details-standard-settings-tab-content" class="details-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Name</div>
+                        <div class="setting-name">名称</div>
                         <div class="setting-field">
                             <span id="read-only-processor-name"></span>
                         </div>
                         <div class="clear"></div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Id</div>
+                        <div class="setting-name">编号</div>
                         <div class="setting-field">
                             <span id="read-only-processor-id"></span>
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Type</div>
+                        <div class="setting-name">类型</div>
                         <div id="read-only-processor-type" class="setting-field"></div>
                         <div class="clear"></div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Bundle</div>
+                        <div class="setting-name">批次</div>
                         <div id="read-only-processor-bundle" class="setting-field"></div>
                         <div class="clear"></div>
                     </div>
                     <div class="setting">
                         <div class="penalty-duration-setting">
                             <div class="setting-name">
-                                Penalty duration
-                                <div class="fa fa-question-circle" alt="Info" title="The amount of time used when this processor penalizes a FlowFile."></div>
+                                惩罚持续时间
+                                <div class="fa fa-question-circle" alt="Info" title="处理器惩罚一个流需要的时间。"></div>
                             </div>
                             <div class="setting-field">
                                 <span id="read-only-penalty-duration"></span>
@@ -56,7 +56,7 @@
                         </div>
                         <div class="yield-duration-setting">
                             <div class="setting-name">
-                                Yield duration
+                                生产持续时间
                                 <div class="fa fa-question-circle" alt="Info" title="When a processor yields, it will not be scheduled again until this amount of time elapses."></div>
                             </div>
                             <div class="setting-field">

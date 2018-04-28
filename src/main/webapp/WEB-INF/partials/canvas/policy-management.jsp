@@ -16,15 +16,15 @@
 --%>
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <div id="policy-management">
-    <div id="policy-management-header-text">Access Policies</div>
+    <div id="policy-management-header-text">访问规则</div>
     <div id="policy-controls-container">
         <span id="selected-policy-action" class="hidden"></span>
         <span id="selected-policy-type" class="hidden"></span>
         <div id="policy-message-container">
             <div id="policy-message"></div>
-            <div id="new-policy-message" class="hidden"><span id="create-policy-link" class="link">Create</span> a new policy.</div>
-            <div id="override-policy-message" class="hidden"><span id="override-policy-link" class="link">Override</span> this policy.</div>
-            <div id="add-local-admin-message" class="hidden"><span id="add-local-admin-link" class="link">Add</span> policy for additional administrators.</div>
+            <div id="new-policy-message" class="hidden"><span id="create-policy-link" class="link">创建</span> 一个新规则。</div>
+            <div id="override-policy-message" class="hidden"><span id="override-policy-link" class="link">覆盖</span> 该规则</div>
+            <div id="add-local-admin-message" class="hidden"><span id="add-local-admin-link" class="link">增加</span> 规则到另外的管理员</div>
             <div class="clear"></div>
         </div>
         <div id="global-policy-controls" class="hidden policy-controls">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="policy-selected-component-details-container">
                     <div class="policy-selected-component-name"></div>
-                    <div class="policy-selected-component-type">Template</div>
+                    <div class="policy-selected-component-type">模版</div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="policy-selected-component-details-container">
                     <div class="policy-selected-component-name"></div>
-                    <div class="policy-selected-component-type">Controller Service</div>
+                    <div class="policy-selected-component-type">控制器服务</div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="policy-selected-component-details-container">
                     <div class="policy-selected-component-name"></div>
-                    <div class="policy-selected-component-type">Reporting Task</div>
+                    <div class="policy-selected-component-type">报告任务</div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -79,15 +79,15 @@
             <div id="component-policy-target"></div>
             <div class="clear"></div>
         </div>
-        <button id="delete-policy-button" class="fa fa-trash policy-button" title="Delete this policy"></button>
-        <button id="new-policy-user-button" class="fa fa-user-plus policy-button" title="Add users/groups to this policy"></button>
+        <button id="delete-policy-button" class="fa fa-trash policy-button" title="删除该规则"></button>
+        <button id="new-policy-user-button" class="fa fa-user-plus policy-button" title="增加用户/组到到该规则"></button>
         <div class="clear"></div>
     </div>
     <div id="policy-table"></div>
     <div id="policy-refresh-container">
-        <button id="policy-refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+        <button id="policy-refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
         <div class="last-refreshed-container">
-            Last updated:&nbsp;<span id="policy-last-refreshed" class="last-refreshed"></span>
+            最近一次更新：&nbsp;<span id="policy-last-refreshed" class="last-refreshed"></span>
         </div>
         <div id="policy-loading-container" class="loading-container"></div>
         <div id="admin-policy-message" class="hidden">Only listing component specific administrators. Inherited administrators not shown.</div>

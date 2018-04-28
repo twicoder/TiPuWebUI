@@ -17,7 +17,7 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <div id="summary">
     <div id="summary-header-and-filter">
-        <div id="summary-header-text">NiFi Summary</div>
+        <div id="summary-header-text">TiPu概要</div>
     </div>
     <div id="summary-tabs" class="tab-container"></div>
     <div id="summary-tabs-content">
@@ -32,7 +32,7 @@
         </div>
         <div id="view-options-container">
             View:&nbsp;
-            <span id="view-single-node-link" class="link">Single node</span>&nbsp;&nbsp;<span id="view-cluster-link" class="link">Cluster</span>
+            <span id="view-single-node-link" class="link">Single node</span>&nbsp;&nbsp;<span id="view-cluster-link" class="link">集群</span>
         </div>
         <div id="processor-summary-tab-content" class="configuration-tab">
             <div id="processor-summary-table" class="summary-table"></div>
@@ -55,12 +55,12 @@
     </div>
 </div>
 <div id="flow-summary-refresh-container">
-    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="Refresh"></button>
+    <button id="refresh-button" class="refresh-button pointer fa fa-refresh" title="刷新"></button>
     <div id="summary-last-refreshed-container" class="last-refreshed-container">
-        Last updated:&nbsp;<span id="summary-last-refreshed" class="value-color"></span>
+        最近一次更新：&nbsp;<span id="summary-last-refreshed" class="value-color"></span>
     </div>
     <div id="summary-loading-container" class="loading-container"></div>
     <div id="system-diagnostics-link-container">
-        <span id="system-diagnostics-link" class="link">system diagnostics</span>
+        <span id="system-diagnostics-link" class="link">系统诊断</span>
     </div>
 </div>
