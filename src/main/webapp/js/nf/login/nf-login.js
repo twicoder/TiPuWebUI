@@ -220,8 +220,8 @@
 
                 // if login is required, verify its supported
                 if (accessConfig.supportsLogin === false && needsLogin === true) {
-                    $('#login-message-title').text('Access Denied');
-                    $('#login-message').text('This NiFi is not configured to support username/password logins.');
+                    $('#login-message-title').text('访问被拒绝');
+                    $('#login-message').text('该TiPu被配置为使用用户名/密码登陆。');
                     showMessage = true;
                     needsLogin = false;
                 }

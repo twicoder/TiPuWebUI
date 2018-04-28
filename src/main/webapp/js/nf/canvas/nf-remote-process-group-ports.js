@@ -1,20 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 /* global define, module, require, exports */
 
 (function (root, factory) {
@@ -534,14 +517,14 @@
             nf.Common.config.tooltipConfig,
             {
                 content: (portType === 'input'
-                    ? 'The batch settings to control how this NiFi sends data to the remote input port in a transaction.'
-                        + ' This NiFi will transfer as much flow files as they are queued in incoming relationships,'
+                    ? 'The batch settings to control how this TiPu sends data to the remote input port in a transaction.'
+                        + ' This TiPu will transfer as much flow files as they are queued in incoming relationships,'
                         + ' until any of these limits is met.'
-                        + ' If none of these setting is specified, this NiFi uses 500 milliseconds batch duration by default.'
-                    : 'The batch settings to tell the remote NiFi how this NiFi prefers to receive data from the remote output port in a transaction.'
-                        + ' The remote NiFi will use these settings as a hint to control batch data transferring.'
-                        + ' However, actual behavior depends on the version of remote NiFi instance.'
-                        + ' Recent version of NiFi uses 5 seconds for batch duration if none of these setting is specified.')
+                        + ' If none of these setting is specified, this TiPu uses 500 milliseconds batch duration by default.'
+                    : 'The batch settings to tell the remote TiPu how this TiPu prefers to receive data from the remote output port in a transaction.'
+                        + ' The remote TiPu will use these settings as a hint to control batch data transferring.'
+                        + ' However, actual behavior depends on the version of remote TiPu instance.'
+                        + ' Recent version of TiPu uses 5 seconds for batch duration if none of these setting is specified.')
             }));
 
         var batchSettings = getBatchSettingsDisplayValues(port);

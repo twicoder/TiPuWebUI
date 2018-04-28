@@ -122,12 +122,12 @@
         };
 
         /**
-         * Whether or not this NiFi is clustered.
+         * Whether or not this TiPu is clustered.
          */
         var isClustered = null;
 
         /**
-         * Determines if this NiFi is clustered.
+         * Determines if this TiPu is clustered.
          */
         var detectedCluster = function () {
             return $.ajax({
@@ -254,7 +254,7 @@
             init: function () {
                 nfStorage.init();
 
-                // load the user and detect if the NiFi is clustered
+                // load the user and detect if the TiPu is clustered
                 $.when(loadAbout(), loadCurrentUser(), detectedCluster()).done(function () {
                     // create the provenance table
                     provenanceTableCtrl.init(isClustered).done(function () {

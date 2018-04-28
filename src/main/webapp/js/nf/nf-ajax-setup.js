@@ -33,7 +33,7 @@
     }
 }(this, function ($, nfStorage) {
     /**
-     * Performs ajax setup for use within NiFi.
+     * Performs ajax setup for use within TiPu.
      */
     $(document).ready(function ($) {
         // include jwt when possible

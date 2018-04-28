@@ -1,20 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 /* global define, module, require, exports */
 
 (function (root, factory) {
@@ -42,18 +25,18 @@
     }
 }(this, function ($, d3, nfCommon, nfDialog, nfErrorHandler) {
     var config = {
-        nifiInstanceId: 'nifi-instance-id',
-        nifiInstanceLabel: 'NiFi',
+        nifiInstanceId: 'tipu-instance-id',
+        nifiInstanceLabel: 'TiPu',
         type: {
-            processor: 'Processor',
-            inputPort: 'Input Port',
-            outputPort: 'Output Port',
-            processGroup: 'Process Group',
-            remoteProcessGroup: 'Remote Process Group',
-            connection: 'Connection',
-            funnel: 'Funnel',
-            template: 'Template',
-            label: 'Label'
+            processor: '处理器',
+            inputPort: '输入端口',
+            outputPort: '输出端口',
+            processGroup: '进程组',
+            remoteProcessGroup: '远程进程组',
+            connection: '连接',
+            funnel: '管道',
+            template: '模版',
+            label: '标签'
         },
         urls: {
             api: '../nifi-api'
@@ -842,7 +825,7 @@
             });
 
             // build the cluster container
-            var clusterDetailsContainer = buildDetailsContainer('NiFi');
+            var clusterDetailsContainer = buildDetailsContainer('TiPu');
 
             // add the total cluster values
             addDetailItem(clusterDetailsContainer, 'Min / Max / Mean', '', 'cluster-aggregate-statistics');

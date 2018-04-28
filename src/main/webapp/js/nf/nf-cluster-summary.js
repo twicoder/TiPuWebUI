@@ -67,7 +67,7 @@
         },
 
         /**
-         * Return whether this instance of NiFi is clustered.
+         * Return whether this instance of TiPu is clustered.
          *
          * @returns {Boolean}
          */

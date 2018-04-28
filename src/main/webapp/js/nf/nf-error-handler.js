@@ -1,20 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 /* global define, module, require, exports */
 
 (function (root, factory) {
@@ -55,8 +38,8 @@
                     $('#message-pane').show();
                 } else {
                     nfDialog.showOkDialog({
-                        headerText: 'Session Expired',
-                        dialogContent: 'Your session has expired. Please press Ok to log in again.',
+                        headerText: '回话超时',
+                        dialogContent: '您的会话已经过期，请点击确定并登陆。',
                         okHandler: function () {
                             window.location = '/nifi';
                         }
@@ -111,32 +94,32 @@
                             content = 'Request transport mechanism failed. Please ensure the host where the application is running is accessible.';
                         }
                     }
-                    $('#message-title').text('Unable to communicate with NiFi');
+                    $('#message-title').text('无法与TiPu建立通信');
                     $('#message-content').text(content);
                 } else if (xhr.status === 401) {
                     $('#message-title').text('Unauthorized');
                     if ($.trim(xhr.responseText) === '') {
-                        $('#message-content').text('Authentication is required to use this NiFi.');
+                        $('#message-content').text('使用TiPu需要授权');
                     } else {
                         $('#message-content').text(xhr.responseText);
                     }
                 } else if (xhr.status === 500) {
-                    $('#message-title').text('An unexpected error has occurred');
+                    $('#message-title').text('发生意外错误');
                     if ($.trim(xhr.responseText) === '') {
-                        $('#message-content').text('An error occurred communicating with the application core. Please check the logs and fix any configuration issues before restarting.');
+                        $('#message-content').text('与应用核心通信时发生错误，请检查日志并修复配置之后尝试重启。');
                     } else {
                         $('#message-content').text(xhr.responseText);
                     }
                 } else if (xhr.status === 200 || xhr.status === 201) {
                     $('#message-title').text('Parse Error');
                     if ($.trim(xhr.responseText) === '') {
-                        $('#message-content').text('Unable to interpret response from NiFi.');
+                        $('#message-content').text('无法解析来自TiPu的响应信息。');
                     } else {
                         $('#message-content').text(xhr.responseText);
                     }
                 } else {
-                    $('#message-title').text(xhr.status + ': Unexpected Response');
-                    $('#message-content').text('An unexpected error has occurred. Please check the logs.');
+                    $('#message-title').text(xhr.status + ': 意料之外的响应');
+                    $('#message-content').text('发生意外错误，请检查日志');
                 }
 
                 // show the error pane
