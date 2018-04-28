@@ -27,17 +27,16 @@
                     <span id="nf-about-build-timestamp"></span>
                 </p>
                 <p id="nf-version-detail-tag">
-                    Tagged <span id="nf-about-build-tag"></span>
+                    构建标识 <span id="nf-about-build-tag"></span>
                 </p>
                 <p id="nf-version-detail-commit">
-                    From <span id="nf-about-build-revision"></span> on branch <span id="nf-about-build-branch"></span>
+                    从 <span id="nf-about-build-revision"></span> 在分支 <span id="nf-about-build-branch"></span>
                 </p>
             </div>
             <p>
-                Apache NiFi is a framework to support highly scalable and flexible dataflows.
-                It can be run on laptops up through clusters of enterprise class servers.
-                Instead of dictating a particular dataflow or behavior it empowers you to design your own
-                optimal dataflow tailored to your specific environment.
+                Orange Could TiPu是一个高度弹性可扩展的支持数据流处理的框架。
+                该框架可以可运行于从笔记本到企业级集群等各种规模的服务器之上。
+                它不限制流的类型，所以使得您可以自行定制流处理的逻辑，从而满足您的业务需求。
             </p>
         </div>
     </div>

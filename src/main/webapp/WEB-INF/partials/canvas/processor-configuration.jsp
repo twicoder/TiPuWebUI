@@ -1,19 +1,3 @@
-<%--
- Licensed to the Apache Software Foundation (ASF) under one or more
-  contributor license agreements.  See the NOTICE file distributed with
-  this work for additional information regarding copyright ownership.
-  The ASF licenses this file to You under the Apache License, Version 2.0
-  (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
---%>
 <%@ page contentType="text/html" pageEncoding="UTF-8" session="false" %>
 <div id="processor-configuration" layout="column" class="hidden large-dialog">
     <div class="processor-configuration-tab-container dialog-content">
@@ -22,29 +6,29 @@
             <div id="processor-standard-settings-tab-content" class="configuration-tab">
                 <div class="settings-left">
                     <div class="setting">
-                        <div class="setting-name">Name</div>
+                        <div class="setting-name">名称</div>
                         <div id="processor-name-container" class="setting-field">
                             <input type="text" id="processor-name" name="processor-name"/>
                             <div class="processor-enabled-container">
                                 <div id="processor-enabled" class="nf-checkbox checkbox-unchecked"></div>
-                                <span class="nf-checkbox-label"> Enabled</span>
+                                <span class="nf-checkbox-label"> 使能</span>
                             </div>
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Id</div>
+                        <div class="setting-name">编号</div>
                         <div class="setting-field">
                             <span id="processor-id"></span>
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Type</div>
+                        <div class="setting-name">类型</div>
                         <div class="setting-field">
                             <span id="processor-type"></span>
                         </div>
                     </div>
                     <div class="setting">
-                        <div class="setting-name">Bundle</div>
+                        <div class="setting-name">批次</div>
                         <div id="processor-bundle" class="setting-field"></div>
                     </div>
                     <div class="setting">
@@ -208,7 +192,7 @@
                                 </div>
                                 <div id="run-duration-data-loss" class="hidden">
                                     <div class="processor-configuration-warning-icon"></div>
-                                    Source Processors with a run duration greater than 0ms and no incoming connections could lose data when NiFi is shutdown.
+                                    Source Processors with a run duration greater than 0ms and no incoming connections could lose data when TiPu is shutdown.
                                 </div>
                             </div>
                         </div>
